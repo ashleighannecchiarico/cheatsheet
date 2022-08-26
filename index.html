@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!--head-->
+<head>
+  <title>Front End Engineer Cheatsheet</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<!--body-->
+<body>
+<!--Main Title-->
+  <div class="main">
+    <h1>Front End Engineer Cheatsheet</h1>
+  </div>
+
+<!--HTML-->
+<div class="lang">
+    <h2>HTML - HyperText Markup Language</h2>
+</div>
+
+<!--HTML Basics to Include-->
+  <h3>HTML Basics to Include:</h3>
+
+<!--HTML Basics Table-->
+<div class="table">
+  <table>
+    <tr>
+      <th><u>Tag:</u></th>
+      <th><u>Description:</u></th>
+      <th><u>Element Type:</u></th>
+    </tr>
+    <tr>
+      <td nowrap>&lt;!DOCTYPE html&gt;</td>
+      <td>Notates the type of document for the browser to expect. <em>Always required as the first line of code.</em></td>
+      <td>Open</td>
+    </tr>
+    <tr>
+      <td>&lt;html&gt;</td>
+      <td>Known as the root element. It should wrap all content on the page. It is the second line of code.</td>
+      <td>Closed</td>
+    </tr>
+    <tr>
+      <td>&lt;head&gt;</td>
+      <td>Acts as a container for content you want to include but not show to your page's viewers. CSS stylesheet goes here.</td>
+      <td>Closed</td>
+    </tr>
+    <tr>
+      <td>&lt;title&gt;</td>
+      <td>Sets the title of the page in the tab of the browser. Used as the title of a favorite/bookmark.</td>
+      <td>Closed</td>
+    </tr>
+    <tr>
+      <td>&lt;body&gt;</td>
+      <td>Showcases <em>all</em> of the content you want your viewer's to see.</td>
+      <td>Closed</td>        
+    </tr>
+    </table>
+</div>
+<br>
+<!--TO DO: format correctly for project-->      
+  <p><b>Code Example:</b></p>
+<div class="code">
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en-US"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width"&gt;
+  &lt;title&gt;My test page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;img src="images/firefox-icon.png" alt="My test image"&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+<br>
+
+<!--Headings-->
+<h3>Headings:</h3>
+ <div class="example">
+  <p>
+    <h1>This is an H1 heading.</h1>
+    <h2>This is an H2 heading.</h2>
+    <h3>This is an H3 heading.</h3>
+    <h4>This is an H4 heading.</h4>
+    <h5>This is an H5 heading.</h5>
+    <h6>This is an H6 heading.</h6>
+  </p>
+</div>
+<!--TO DO: format correctly for project-->
+<p><b>Code Example:</b></p>
+<div class="code">
+  <pre>
+&lt;h1&gt;This is an H1 heading.&lt;/h1&gt;
+&lt;h2&gt;This is an H2 heading.&lt;/h2&gt;
+&lt;h3&gt;This is an H3 heading.&lt;/h3&gt;
+&lt;h4&gt;This is an H4 heading.&lt;/h4&gt;
+&lt;h5&gt;This is an H5 heading.&lt;/h5&gt;
+&lt;h6&gt;This is an H6 heading.&lt;/h6&gt;
+    </pre>
+</div>
+<br>
+
+<!--Lists-->
+  <h3>Lists:</h3>
+    <p>There are two types of lists: ordered and unordered.
+      <ol>
+        <li>Ordered lists appear like this.</li>
+      </ol>
+      <ul>
+        <li>Unordered lists appear like this.</li>
+      </ul>
+<br>
+    </p>
+<p><b>Code Example:</b></p>
+<!--TO DO: format correctly for project-->
+<div class="code">
+  <pre>
+  &lt;ol&gt;
+    &lt;li&gt;Ordered lists appear like this.&lt;/li&gt;
+  &lt;/ol&gt;
+  </pre>
+  <pre>
+  &lt;ul&gt;
+    &lt;li&gt;Unordered lists appear like this.&lt;/li&gt;
+  &lt;/ul&gt;
+  </pre>
+</div>
+<br>
+
+<!--Tables-->
+  <h3>Tables:</h3>
+  <div class= "table"><p>
+    <table>
+      <tr>
+        <th><u>Tag:</u></th>
+        <th><u>Description:</u></th>
+      </tr>
+      <tr>
+        <td>&lt;table&gt;</td>
+        <td>Defines a table</td>
+      </tr>
+      <tr>
+        <td>&lt;caption&gt;</td>
+        <td>Defines a table caption</td>
+      </tr>
+      <tr>
+        <td>&lt;th&gt;</td>
+        <td>Defines a header cell in a table</td>
+        </tr>
+        <tr>
+          <td>&lt;tr&gt;</td>
+          <td>Defines a row in a table</td>
+        </tr>
+        <tr>
+          <td>&lt;td&gt;</td>
+          <td>Defines a cell in a table</td>
+        </tr>
+        <tr>
+          <td>&lt;thead&gt;</td>
+          <td>Groups the header content in a table</td>
+        </tr>
+        <tr>
+          <td>&lt;tbody&gt;</td>
+          <td>Groups the body content in a table</td>
+        </tr>
+        <tr>
+          <td>&lt;tfoot&gt;</td>
+          <td>Groups the footer content in a table</td>
+        </tr>
+        <tr>
+          <td>&lt;col&gt;</td>
+          <td>Specifies column properties for each column within a &lt;colgroup&gt; element</td>
+        </tr>
+        <tr>
+          <td>&lt;colgroup&gt;</td>
+          <td>Specifies a group of one or more columns in a table for formatting</td>
+          </tr>
+          </table>
+</p>
+</div>
+<!--TO DO: format correctly for project-->   
+<p><b>Code Example:</b></p>
+<div class= "code">
+  <pre>
+    &lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Company&lt;/th&gt;
+    &lt;th&gt;Contact&lt;/th&gt;
+    &lt;th&gt;Country&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+    &lt;td&gt;Maria Anders&lt;/td&gt;
+    &lt;td&gt;Germany&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Centro comercial Moctezuma&lt;/td&gt;
+    &lt;td&gt;Francisco Chang&lt;/td&gt;
+    &lt;td&gt;Mexico&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+</div>
+<br>
+
+<!--CSS-->
+  <div class="lang">
+    <h2>CSS - Cascading Style Sheets</h2>
+  </div>
+<!--CSS Syntax-->
+<h3>CSS Syntax</h3>
+<div class="code">
+<pre><code>
+  h1 { 
+    color:blue;
+    font-size:12px;
+  }
+  </code></pre>
+  </div>
+<p>The selector (h1) points to the HTML element you want to style.
+<br>
+The declaration block contains one or more declarations separated by semicolons.
+<br>
+Each declaration includes a CSS property name and a value, separated by a colon.
+<br>
+Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.
+<br><br>
+</p>
+<div>
+
+<!--How to add CSS-->
+  <h3>How to Add CSS</h3>
+</div>
+<div>
+  <p>Each HTML page must include a reference to the external style sheet file inside the &lt;link&gt; element, inside the head section.</p>
+</div>
+<!--TO DO: format correctly for project-->  
+  <p><b>Code Example:</b></p>
+  <div class="code"><pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel="stylesheet" href="mystyle.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+</div>
+<br>
+
+<!--CSS Web Safe Fonts-->
+<div>
+  <h3><b>CSS Web Safe Fonts</b></h3>
+</div>
+<div>
+  <ul>
+    <li>Arial (sans-serif)</li>
+    <li>Verdana (sans-serif)</li>
+    <li>Helvetica (sans-serif)</li>
+    <li>Tahoma (sans-serif)</li>
+    <li>Trebuchet MS (sans-serif)</li>
+    <li>Times New Roman (serif)</li>
+    <li>Georgia (serif)</li>
+    <li>Garamond (serif)</li>
+    <li>Courier New (monospace)</li>
+    <li>Brush Script MT (cursive)</li>
+  </ul>
+</div>
+<br>
+
+<!--Colors-->
+<div>
+  <h3><b>Colors:</b></h3>
+</div>
+<div>
+<p>Colors in CSS can be specified by the following methods:</p>
+  <ul>
+    <li>Hexadecimal colors</li>
+    <li>Hexadecimal colors with transparency</li>
+    <li>RGB colors</li>
+    <li>RGBA colors</li>
+    <li>HSL colors</li>
+    <li>HSLA colors</li>
+    <li>Predefined/Cross-browser color names</li>
+    <li>With the currentcolor keyword</li>
+  </ul>
+</div>
+<div>
+<p>All modern browsers support the 140 color names linked below in Helpful Links.</p>
+</div>
+
+<!--Helpful Links-->
+<div class="nav">
+<p>Helpful Links:</p>
+<a href="https://www.w3schools.com/html/default.asp">HTML Tutorial</a>
+<br>
+<a href="https://www.w3schools.com/tags/default.asp">HTML Elements Reference</a>
+<br>
+<a href="https://www.codecademy.com/learn/learn-html/modules/learn-html-elements/cheatsheet">Learn HTML</a>
+<br>
+<a href="w3schools.com/colors/colors_names.asp">Color Names</a>
+<br>
+<a href="https://www.w3schools.com/cssref/default.asp">CSS Reference</a>
+<br>
+</div>
+  </body>
+<br>
+
+<!--Footer-->
+<div class="flex-container">
+<footer>
+  <p>Author: Ashleigh Annecchiarico</p>
+  <p><a href="mailto:ashleighannecchiarico@gmail.com">Contact</a></p>
+</footer>
+</div>
+</html>
